@@ -1,0 +1,72 @@
+
+:root {
+    --clr-lightBlue: #a8bcdf;
+    --clr-darkBlue: #1d70b8;
+    --clr-lightGray: #f3f2f1;
+    --clr-white: #ffffff;
+}
+
+body {
+    background-color: var(--clr-lightBlue);
+}
+
+.container-fluid li a{
+    color: var(--clr-darkBlue) !important;
+    font-size: 1.4rem;
+}
+
+.nav li a{
+    color: var(--clr-white) !important;
+}
+
+.container-fluid li a{
+    color: var(--clr-darkBlue) !important;
+    font-size: 1.4rem;
+}
+
+.info h4 {
+    font-size: 1rem;
+}
+
+.reminder p {
+    max-width: 1050px;
+    margin-bottom: 0 !important;
+}
+
+caption {
+    background-color: #a8bcdf;
+}
+
+th {
+    text-align: right;
+    color: var(--clr-darkBlue) !important;
+}
+
+
+/* utils */
+
+.bg-blue {
+    background-color: var(--clr-darkBlue);
+}
+
+.bg-gray {
+    background-color: var(--clr-lightGray);
+}
+
+/* media queries */
+
+@media only screen and (min-width: 58.125em) {
+    .nav {
+        flex-direction: row !important;
+    }
+}
+
+@media only screen and (min-width: 76.5625em) {
+    .nav-banner {
+        max-width: 25%;
+    }
+
+    .nav-banner h3 {
+        text-align: left;
+    }
+}
