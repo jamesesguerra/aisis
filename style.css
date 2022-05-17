@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+  
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
     --clr-lightBlue: #a8bcdf;
@@ -43,6 +53,22 @@ th {
     color: var(--clr-darkBlue) !important;
 }
 
+h1 {
+    margin-bottom: 0 !important;
+    color: var(--clr-darkBlue);
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    margin: 5px 0 8px 0;
+}
 
 /* utils */
 
@@ -52,6 +78,10 @@ th {
 
 .bg-gray {
     background-color: var(--clr-lightGray);
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 /* media queries */

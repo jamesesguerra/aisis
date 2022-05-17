@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student Information - AISIS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-blue">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <span class="text-light fs-1">aisis<span class="text-warning">online</span></span>
+            <ul class="nav justify-content-end text-light">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign Out</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg-warning">
+            <h3 class="text-center py-2">Ateneo Integrated Student Information System</h3>
+        </div>
+    </header>
+
+    <nav class="container-fluid">
+        <div class="bg-light d-flex align-items-stretch py-3 px-2 flex-wrap">
+            <div class="bg-blue p-2 flex-grow-1 nav-banner text-center">
+                <h3 class="text-light">Welcome to the Ateneo Integrated Information System</h3>
+            </div>
+            <div class="bg-gray flex-grow-1">
+                <ul class="nav justify-content-around h-100 align-items-center flex-wrap flex-column">
+                    <li class="nav-item py-1">
+                      <a href="/index.html">Homepage</a>
+                    </li>
+                    <li class="nav-item py-1">
+                      <a href="/updateInfo.html">Update Student Information</a>
+                    </li>
+                    <li class="nav-item py-1">
+                      <a href="#">Class Schedules</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a href="#">View Student Grades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="bg-light ps-2 pb-3">
+            <h1>UPDATE STUDENT INFORMATION</h1>
+        </div>
+        <div class="bg-light d-flex justify-content-between px-2">
+            <h2 class="fs-5">Update for 2nd Semester, SY 2021-2022</h2>
+            <h2 class="fs-5">User Identified as: JUAN DELA CRUZ</h2>
+        </div>
+        <p class="bg-light px-2 text-danger fw-bold pb-4">All fields are required. Please input NA for all fields that are not applicable.</p>
+        
+        <section class="bg-light">
+            <form action="" class="container form-floating">
+                <fieldset class="pb-4">
+                    <legend class="fw-bold">STUDENT'S CONTACT NUMBER</legend>
+                    <div class="d-flex flex-wrap row">
+                        <span class="col-sm-6"><span class="fw-bold">Primary Email:</span> jdelacruz@obf.ateneo.edu</span>
+                        <div class="col-sm-6">
+                            <label>
+                                Primary Mobile Number:
+                                <input type="tel" placeholder="0918-8759387" class="form-control">
+                            </label>
+                            <p class="text-primary form-text">(*Please note that your mobile number should be updated every time you change contact number as this is a primary and urgent means to get in touch with you for official communication e.g. notices, summons, correspondences and during emergencies. This is also your registered number on the Atenista Ka App (AKApp) SMS blast service of the school which allows you to receive important notices, announcements and bulletins from the school.)</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <label>
+                                Secondary Email: 
+                                <input type="text" name="" value="jdelacruz@gmail.com" class="form-control">
+                            </label>
+                            <p class="text-primary form-text">(Please note that this email will not be used for official notices by the school unless all means to contact you are exhausted.)</p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="pb-4">
+                    <legend class="fw-bold">PARENTS'/GUARDIAN'S PERMANENT MAILING ADDRESS</legend>
+                    <p class="pb-3">Note: Changes to Parent's/Guardian's Permanent Mailing Address can only be made through the Office of the Registrar.</p>
+                    <div class="row">
+                        <span class="col-6"><span class="fw-bold">Unit No. and Building:</span> NA</span>
+                        <span class="col-6"><span class="fw-bold">Street Name:</span> ABRA ST.</span>
+                        <span class="col-6"><span class="fw-bold">Street No:</span> 15</span>
+                        <span class="col-6"><span class="fw-bold">Municipality:</span> NA</span>
+                        <span class="col-6"><span class="fw-bold">Village/Brgy. Name:</span> BAGO BANTAY</span>
+                        <span class="col-6"><span class="fw-bold">Zip/Postal Code:</span> 1105</span>
+                        <span class="col-6"><span class="fw-bold">City:</span> QUEZON CITY</span>
+                        <span class="col-6"><span class="fw-bold">Country:</span> PHILIPPINES</span>
+                        <span class="col-6"><span class="fw-bold">Province:</span> NCR</span>
+                        <span class="col-6"><span class="fw-bold">Email:</span> jdc@gmail.com</span>
+                        <span class="col-6"><span class="fw-bold">Contact Person:</span> MR. & MRS. DELA CRUZ</span>
+                        <span class="col-6"><span class="fw-bold">Landline:</span> 02-6212030</span>
+                        <span class="col-6"><span class="fw-bold">Mobile Number:</span> 5545245</span>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="pb-4">
+                    <legend class="fw-bold">CURRENT ADDRESS</legend>
+                    <button class="px-1 btn btn-outline-primary mb-3">Click to copy Parent's/Guardian's permanent mailing address</button>
+
+                    <div class="row">
+                        <label for="" class="col-sm-6">
+                            Unit No. and Building:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street No:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Municipality:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Village/Brgy. Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Zip/Postal Code:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            City:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Country:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Province:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Email:
+                            <input type="email" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Landline:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Mobile Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Fax Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
+                        <fieldset class="form-check-inline col-sm-6">
+                            <legend class="fs-6 fw-bold">Internet Type:</legend>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                                None
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                                Home Internet (LAN/WIFI) 
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                                Portable Router 
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                                Mobile Data 
+                            </label>
+                        </fieldset>
+                        <label for="" class="col-sm-6">
+                            Internet Provider
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="pb-4">
+                    <legend class="fw-bold">WEEKEND ADDRESS</legend>
+                    <button class="px-1 btn btn-outline-primary mb-3">Click to copy Parent's/Guardian's permanent mailing address</button>
+
+                    <div class="row">
+                        <label for="" class="col-sm-6">
+                            Unit No. and Building:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street No:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Municipality:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Village/Brgy. Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Zip/Postal Code:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            City:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Country:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Province:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Email:
+                            <input type="email" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Landline:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Mobile Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Fax Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="pb-4">
+                    <legend class="fw-bold">EMERGENCY ADDRESS</legend>
+                    <button class="px-1 btn btn-outline-primary mb-3">Click to copy Parent's/Guardian's permanent mailing address</button>
+
+                    <div class="row">
+                        <label for="" class="col-sm-6">
+                            Unit No. and Building:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street No:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Municipality:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Village/Brgy. Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Zip/Postal Code:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            City:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Country:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Province:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Email:
+                            <input type="email" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Mobile Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Fax Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
+                        <fieldset class="form-check-inline col-sm-6">
+                            <legend class="fs-6 fw-bold">Relationship to Contact Person:</legend>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Mother
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Father
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Other
+                            </label>
+                            <label for="otherRelationship" class="visually-hidden">Relationship to Contact Person</label>
+                            <input type="text" name="" id="otherRelationship" class="form-control d-inline w-25" placeholder="Brother">
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                <fieldset class="pb-4">
+                    <legend class="fw-bold">FATHER'S ADDRESS</legend>
+                    <button class="px-1 btn btn-outline-primary mb-3">Click to copy Parent's/Guardian's permanent mailing address</button>
+
+                    <div class="row">
+                        <label for="" class="col-sm-6">
+                            Unit No. and Building:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street No:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Municipality:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Village/Brgy. Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Zip/Postal Code:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            City:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Country:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Province:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Email:
+                            <input type="email" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Mobile Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Fax Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
+                        <fieldset class="form-check-inline col-sm-6">
+                            <legend class="fs-6 fw-bold">Status:</legend>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Living
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Deceased
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Single Parent
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                NA
+                            </label>
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                <fieldset class="pb-4">
+                    <legend class="fw-bold">MOTHER'S ADDRESS</legend>
+                    <button class="px-1 btn btn-outline-primary mb-3">Click to copy Parent's/Guardian's permanent mailing address</button>
+
+                    <div class="row">
+                        <label for="" class="col-sm-6">
+                            Unit No. and Building:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Street No:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Municipality:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Village/Brgy. Name:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Zip/Postal Code:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            City:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Country:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Province:
+                            <input type="text" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Email:
+                            <input type="email" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Mobile Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <label for="" class="col-sm-6">
+                            Fax Number:
+                            <input type="tel" name="" id="" class="form-control">
+                        </label>
+                        <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Juana A. Dela Cruz</span>
+                        <fieldset class="form-check-inline col-sm-6">
+                            <legend class="fs-6 fw-bold">Status:</legend>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Living
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Deceased
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                Single Parent
+                            </label>
+                            <label for="" class="form-check-label pe-2">
+                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                NA
+                            </label>
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                <fieldset class="pb-4">
+                    <legend class="fw-bold fs-5">ATENISTA KA APP (AKAPP) SERVICE REGISTRATION</legend>
+                    <label for="" class="pb-2">
+                        <input type="checkbox" name="" id="" class="form-check-input">
+                        I agree to receive announcements, notices and reminders from the Ateneo through SMS by being automatically registered to the Atenista Ka App.
+                    </label>
+                    <label for="" class="text-danger text-justify">
+                        <input type="checkbox" name="" id="" class="form-check-input">
+                        I hereby certify that my personal data in the AISIS is correct and up-to-date. I understand that posting false information on AISIS may be considered as grounds for disciplinary action against me. I understand that any personal or privileged information gathered for the AISIS is meant for official use and will be kept as confidential or privileged information, and is not to be used or disclosed without proper authorization. Furthermore, I consent to have these data used by offices of the Loyola Schools for their official communication channels to allow the school to communicate with me to ensure my welfare, and that I am kept up to date with important school notices and/or summons.
+                    </label>
+                </fieldset>
+                <button class="btn btn-primary mb-4">Confirm Information</button>
+                <p class="pb-5">For official school announcements, bulletins and FAQs, please refer to the LS-One website at <a href="https://bit.ly/LS-One" target="_blank">bit.ly/LS-One</a></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-warning py-1">
+        <ul class="nav justify-content-center text-primary">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terms & Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <h6 class="text-center">(c) Copyright 2006 Ateneo Integrated Student Information System. Ateneo de Manila University. All Rights Reserved. 
+        <br />  
+        version 2022.02.15</h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
