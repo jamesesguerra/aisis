@@ -109,6 +109,10 @@ h3 {
     text-align: justify;
 }
 
+.sm-container {
+    max-width: 800px;
+}
+
 /* media queries */
 
 @media only screen and (min-width: 58.125em) {
