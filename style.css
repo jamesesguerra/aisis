@@ -11,7 +11,7 @@ html {
 
 :root {
     --clr-lightBlue: #a8bcdf;
-    --clr-darkBlue: #1d70b8;
+    --clr-darkBlue: #165790;
     --clr-lightGray: #f3f2f1;
     --clr-white: #ffffff;
 }
@@ -26,8 +26,14 @@ body {
 }
 
 .nav li a{
-    color: var(--clr-white) !important;
+    color: var(--clr-white);
     padding: 8px 8px !important;
+}
+
+.nav li a:hover, .nav li a:focus {
+    text-decoration: underline;
+    color: var(--clr-white);
+    text-underline-offset: 2px;
 }
 
 .container-fluid li a{
@@ -78,6 +84,19 @@ h3 {
     text-align: center;
 }
 
+.schedule th {
+    vertical-align: middle;
+}
+
+
+footer a {
+    color: var(--clr-darkBlue) !important;
+}
+
+footer li {
+    font-weight: bold;
+}
+
 
 /* skip link */
 
@@ -92,6 +111,10 @@ h3 {
 }
 
 /* utils */
+
+.text-darkBlue {
+    color: var(--clr-darkBlue) !important;
+}
 
 .bg-blue {
     background-color: var(--clr-darkBlue);
@@ -112,14 +135,6 @@ h3 {
 .sm-container {
     max-width: 800px;
 }
-
-.schedule th {
-    vertical-align: middle;
-}
-
-/* .schedule td {
-    text-align: center;
-} */
 
 /* media queries */
 
