@@ -66,28 +66,159 @@
 
         <div class="bg-light">
             <div class="bg-secondary mx-2">
-                <div class="sm-container text-light mx-auto py-2 row">
-                    <form class="row">
-                        <label class="mb-3 w-100">
+                <div class="sm-container text-light py-3 mx-auto">
+                    <form class="row px-2">
+                        <label class="mb-3">
                             School Year and Term
-                            <select name="" id="" class="form-select form-select-sm"></select>
+                            <select name="" id="" class="form-select">
+                                <option value="" disabled>Select Year and Term</option>
+                                <option value="">2022-2023 - Summer</option>
+                                <option value="" selected>2021-2022 - Second Semester</option>
+                                <option value="">2021-2022 - First Semester</option>
+                                <option value="">2021-2022 - Summer</option>
+                                <option value="">2020-2021 - Second Semester</option>
+                            </select>
                         </label>
                         <label class="mb-3">
                             Department
-                            <select name="" id="" class="form-select form-select-sm"></select>
+                            <select name="" id="" class="form-select">
+                                <option value="" disabled>Select Department</option>
+                                <option value="">ATENEO TEACHER CENTER</option>
+                                <option value="">BIOLOGY</option>
+                                <option value="" selected>CHEMISTRY</option>
+                                <option value="">CHINESE STUDIES PROGRAM</option>
+                                <option value="">COMMUNICATION</option>
+                            </select>
                         </label>
                         <label class="mb-3">
-                            Cat no.
-                            <select name="" id="" class="form-select form-select-sm"></select>
+                            Cat No.
+                            <select name="" id="" class="form-select">
+                                <option value="" disabled>Select Cat No.</option>
+                                <option value="">ALL</option>
+                                <option value="">CH 182.9: SENIOR RESEARCH II</option>
+                                <option value="">CH 35: QUANTITATIVE ANALYSIS</option>
+                                <option value="" selected>CHEM 10.01: CHEMISTRY IN MODERN LIFE</option>
+                            </select>
                         </label>
                     </form>
-                    <button class="btn btn-primary btn-lg w-75 mx-auto mt-2">Display Class Schedule</button>
+                    <button class="btn btn-primary btn-md w-75 mx-auto d-block mt-3">Display Class Schedule</button>
                 </div>
             </div>
         </div>
 
+        <div class="bg-light py-5">
+            <div class="table-responsive container schedule">
+                <table class="table table-bordered">
+                    <caption>Summary of Class Schedules</caption>
+                    <thead class="bg-lightBlue text-center">
+                        <tr>
+                            <th scope="col">Subject Code</th>
+                            <th scope="col">Section</th>
+                            <th scope="col">Course Title</th>
+                            <th scope="col">Units</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Room</th>
+                            <th scope="col">Instructor</th>
+                            <th scope="col">Max No.</th>
+                            <th scope="col">Lang</th>
+                            <th scope="col">Level</th>
+                            <th scope="col">Free Slots</th>
+                            <th scope="col">Remarks</th>
+                            <th scope="col">S</th>
+                            <th scope="col">P</th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr class="text-center">
+                            <td>CHEM 10.01</td>
+                            <td>A</td>
+                            <td>CHEMISTRY IN MODERN LIFE</td>
+                            <td>3</td>
+                            <td>M-W-F 1300-1400</td>
+                            <td>TBA</td>
+                            <td>HULOG, Alexandra Melise</td>
+                            <td>22</td>
+                            <td>ENG</td>
+                            <td>U</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>AS</td>
+                            <td>AP</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>CHEM 10.01</td>
+                            <td>B</td>
+                            <td>CHEMISTRY IN MODERN LIFE</td>
+                            <td>3</td>
+                            <td>T-TH 0800-0930</td>
+                            <td>TBA</td>
+                            <td>CHEN, Albert</td>
+                            <td>22</td>
+                            <td>ENG</td>
+                            <td>U</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>AS</td>
+                            <td>AP</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>CHEM 10.01</td>
+                            <td>C</td>
+                            <td>CHEMISTRY IN MODERN LIFE</td>
+                            <td>3</td>
+                            <td>M-W-F 1100-1200</td>
+                            <td>TBA</td>
+                            <td>CHEN, Albert</td>
+                            <td>20</td>
+                            <td>ENG</td>
+                            <td>U</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>AS</td>
+                            <td>AP</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>CHEM 10.01</td>
+                            <td>D</td>
+                            <td>CHEMISTRY IN MODERN LIFE</td>
+                            <td>3</td>
+                            <td>M-W-F 1300-1400</td>
+                            <td>TBA</td>
+                            <td>CHEN, Albert</td>
+                            <td>20</td>
+                            <td>ENG</td>
+                            <td>U</td>
+                            <td>0</td>
+                            <td>-</td>
+                            <td>AS</td>
+                            <td>AP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </main>
+
+    <footer class="bg-warning py-1">
+        <ul class="nav justify-content-center text-primary">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terms & Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <h6 class="text-center">(c) Copyright 2006 Ateneo Integrated Student Information System. Ateneo de Manila University. All Rights Reserved. 
+        <br />  
+        version 2022.02.15</h6>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

@@ -113,6 +113,14 @@ h3 {
     max-width: 800px;
 }
 
+.schedule th {
+    vertical-align: middle;
+}
+
+/* .schedule td {
+    text-align: center;
+} */
+
 /* media queries */
 
 @media only screen and (min-width: 58.125em) {
