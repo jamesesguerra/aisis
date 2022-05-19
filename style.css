@@ -97,6 +97,12 @@ footer li {
     font-weight: bold;
 }
 
+.logo {
+    background-image: url(assets/Ateneo_de_Manila_University_seal.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 /* skip link */
 
