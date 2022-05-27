@@ -64,8 +64,8 @@
         </div>
         <p class="bg-light px-2 text-danger fw-bold pb-4">All fields are required. Please input NA for all fields that are not applicable.</p>
         
-        <section class="bg-light">
-            <form action="" class="container form-floating">
+        <section class="bg-light" aria-live="assertive">
+            <form action="" class="container form-floating needs-validation" novalidate>
                 <fieldset class="pb-4">
                     <legend class="fw-bold">STUDENT'S CONTACT NUMBER</legend>
                     <div class="d-flex flex-wrap row">
@@ -73,14 +73,20 @@
                         <div class="col-sm-6">
                             <label>
                                 Primary Mobile Number:
-                                <input type="tel" placeholder="0918-8759387" class="form-control">
+                                <input type="tel" placeholder="0918-8759387" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid primary mobile number.
+                                </div>
                             </label>
                             <p class="text-primary form-text">(*Please note that your mobile number should be updated every time you change contact number as this is a primary and urgent means to get in touch with you for official communication e.g. notices, summons, correspondences and during emergencies. This is also your registered number on the Atenista Ka App (AKApp) SMS blast service of the school which allows you to receive important notices, announcements and bulletins from the school.)</p>
                         </div>
                         <div class="col-sm-6">
                             <label>
                                 Secondary Email: 
-                                <input type="text" name="" value="jdelacruz@gmail.com" class="form-control">
+                                <input type="email" name="" value="jdelacruz@gmail.com" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid secondary email.
+                                </div>
                             </label>
                             <p class="text-primary form-text">(Please note that this email will not be used for official notices by the school unless all means to contact you are exhausted.)</p>
                         </div>
@@ -114,56 +120,95 @@
 
                     <div class="row">
                         <label for="" class="col-sm-6">
-                            Unit No. and Building:
-                            <input type="text" name="" id="" class="form-control">
+                            Unit Number and Building:
+                            <input type="text" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid unit number and building.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Street Name:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Times" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Street No:
-                            <input type="text" name="" id="" class="form-control">
+                            Street Number:
+                            <input type="text" name="" id="" class="form-control" value="15" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Municipality:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid municipality.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Village/Brgy. Name:
-                            <input type="text" name="" id="" class="form-control">
+                            Village/Barangay Name:
+                            <input type="text" name="" id="" class="form-control" value="Ramon Magsaysay" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid village/barangay name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Zip/Postal Code:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="1105" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip/postal code.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             City:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Country:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Philippines" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid country.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Province:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="National Capital Region" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid province.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Email:
-                            <input type="email" name="" id="" class="form-control">
+                            <input type="email" name="" id="" class="form-control" value="jdelacruz@gmail.com" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Landline:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="02-6212030" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid landline.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Mobile Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="09236446511" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid mobile number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Fax Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid fax number.
+                            </div>
                         </label>
                         <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
                         <fieldset class="form-check-inline col-sm-6">
@@ -173,7 +218,7 @@
                                 None
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="checkbox" name="" id="" class="form-check-input">
+                                <input type="checkbox" name="" id="" class="form-check-input" checked>
                                 Home Internet (LAN/WIFI) 
                             </label>
                             <label for="" class="form-check-label pe-2">
@@ -184,10 +229,16 @@
                                 <input type="checkbox" name="" id="" class="form-check-input">
                                 Mobile Data 
                             </label>
+                            <div class="invalid-feedback">
+                                Please provide a valid internet type.
+                            </div>
                         </fieldset>
                         <label for="" class="col-sm-6">
-                            Internet Provider
-                            <input type="text" name="" id="" class="form-control">
+                            Internet Provider (NA if not applicable)
+                            <input type="text" name="" id="" class="form-control" value="Globe" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid internet provider.
+                            </div>
                         </label>
                     </div>
                 </fieldset>
@@ -198,56 +249,95 @@
 
                     <div class="row">
                         <label for="" class="col-sm-6">
-                            Unit No. and Building:
-                            <input type="text" name="" id="" class="form-control">
+                            Unit Number and Building:
+                            <input type="text" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid unit number and building.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Street Name:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Times" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Street No:
-                            <input type="text" name="" id="" class="form-control">
+                            Street Number:
+                            <input type="text" name="" id="" class="form-control" value="15" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Municipality:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid municipality.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Village/Brgy. Name:
-                            <input type="text" name="" id="" class="form-control">
+                            Village/Barangay. Name:
+                            <input type="text" name="" id="" class="form-control" value="Ramon Magsaysay" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid village/barangay name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Zip/Postal Code:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="1105" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip/postal code.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             City:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Country:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Philippines" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid country.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Province:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="National Capital Region" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid province.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Email:
-                            <input type="email" name="" id="" class="form-control">
+                            <input type="email" name="" id="" class="form-control" value="jdelacruz@gmail.com" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Landline:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="02-6212030" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid landline.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Mobile Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="09236446511" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid mobile number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Fax Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid fax number.
+                            </div>
                         </label>
                         <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
                     </div>
@@ -259,52 +349,88 @@
 
                     <div class="row">
                         <label for="" class="col-sm-6">
-                            Unit No. and Building:
-                            <input type="text" name="" id="" class="form-control">
+                            Unit Number and Building:
+                            <input type="text" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid unit number and building.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Street Name:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Times" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Street No:
-                            <input type="text" name="" id="" class="form-control">
+                            Street Number:
+                            <input type="text" name="" id="" class="form-control" value="15" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Municipality:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid municipality.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Village/Brgy. Name:
-                            <input type="text" name="" id="" class="form-control">
+                            Village/Barangay Name:
+                            <input type="text" name="" id="" class="form-control" value="Ramon Magsaysay" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid village/barangay name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Zip/Postal Code:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="1105" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip/postal code.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             City:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Country:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Philippines" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid country.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Province:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="National Capital Region" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid province.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Email:
-                            <input type="email" name="" id="" class="form-control">
+                            <input type="email" name="" id="" class="form-control" value="jdelacruz@gmail.com" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Mobile Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid mobile number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Fax Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid fax number.
+                            </div>
                         </label>
                         <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
                         <fieldset class="form-check-inline col-sm-6">
@@ -314,7 +440,7 @@
                                 Mother
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="relationship" id="" class="form-check-input" checked>
                                 Father
                             </label>
                             <label for="" class="form-check-label pe-2">
@@ -323,6 +449,9 @@
                             </label>
                             <label for="otherRelationship" class="visually-hidden">Relationship to Contact Person</label>
                             <input type="text" name="" id="otherRelationship" class="form-control d-inline w-25" placeholder="Brother">
+                            <div class="invalid-feedback">
+                                Please provide a valid relationship to contact person.
+                            </div>
                         </fieldset>
                     </div>
                 </fieldset>
@@ -333,70 +462,106 @@
 
                     <div class="row">
                         <label for="" class="col-sm-6">
-                            Unit No. and Building:
-                            <input type="text" name="" id="" class="form-control">
+                            Unit Number and Building:
+                            <input type="text" name="" id="" value="NA" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid unit number and building.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Street Name:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Times" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Street No:
-                            <input type="text" name="" id="" class="form-control">
+                            Street Number:
+                            <input type="text" name="" id="" class="form-control" value="15" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Municipality:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid municipality.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Village/Brgy. Name:
-                            <input type="text" name="" id="" class="form-control">
+                            Village/Barangay Name:
+                            <input type="text" name="" id="" class="form-control" value="Ramon Magsaysay" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid village/barangay name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Zip/Postal Code:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="1105" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip/postal code.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             City:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Country:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Philippines" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid country.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Province:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="National Capital Region" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid province.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Email:
-                            <input type="email" name="" id="" class="form-control">
+                            <input type="email" name="" id="" class="form-control" value="jaimedelacruz@gmail.com" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Mobile Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="09236446511" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid mobile number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Fax Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid fax number.
+                            </div>
                         </label>
                         <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Jaime R. Dela Cruz</span>
                         <fieldset class="form-check-inline col-sm-6">
                             <legend class="fs-6 fw-bold">Status:</legend>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="fatherLivingStatus" id="" class="form-check-input" checked>
                                 Living
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="fatherLivingStatus" id="" class="form-check-input">
                                 Deceased
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="fatherLivingStatus" id="" class="form-check-input">
                                 Single Parent
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="fatherLivingStatus" id="" class="form-check-input">
                                 NA
                             </label>
                         </fieldset>
@@ -409,70 +574,106 @@
 
                     <div class="row">
                         <label for="" class="col-sm-6">
-                            Unit No. and Building:
-                            <input type="text" name="" id="" class="form-control">
+                            Unit Number and Building:
+                            <input type="text" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid unit number and building.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Street Name:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Times" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Street No:
-                            <input type="text" name="" id="" class="form-control">
+                            Street Number:
+                            <input type="text" name="" id="" class="form-control" value="15" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid street number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Municipality:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid municipality.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
-                            Village/Brgy. Name:
-                            <input type="text" name="" id="" class="form-control">
+                            Village/Barangay Name:
+                            <input type="text" name="" id="" class="form-control" value="Ramon Magsaysay" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid village/barangay name.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Zip/Postal Code:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="1105" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip/postal code.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             City:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Quezon City" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Country:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="Philippines" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid country.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Province:
-                            <input type="text" name="" id="" class="form-control">
+                            <input type="text" name="" id="" class="form-control" value="National Capital Region" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid province.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Email:
-                            <input type="email" name="" id="" class="form-control">
+                            <input type="email" name="" id="" class="form-control" value="juanadelacruz@gmail.com" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Mobile Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="09222156631" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid mobile number.
+                            </div>
                         </label>
                         <label for="" class="col-sm-6">
                             Fax Number:
-                            <input type="tel" name="" id="" class="form-control">
+                            <input type="tel" name="" id="" class="form-control" value="NA" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid fax number.
+                            </div>
                         </label>
                         <span class="col-sm-6"><span class="fw-bold">Contact Person:</span> Juana A. Dela Cruz</span>
                         <fieldset class="form-check-inline col-sm-6">
                             <legend class="fs-6 fw-bold">Status:</legend>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="motherLivingStatus" id="" class="form-check-input" checked>
                                 Living
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="motherLivingStatus" id="" class="form-check-input">
                                 Deceased
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="motherLivingStatus" id="" class="form-check-input">
                                 Single Parent
                             </label>
                             <label for="" class="form-check-label pe-2">
-                                <input type="radio" name="relationship" id="" class="form-check-input">
+                                <input type="radio" name="motherLivingStatus" id="" class="form-check-input">
                                 NA
                             </label>
                         </fieldset>
@@ -482,15 +683,21 @@
                 <fieldset class="pb-4">
                     <legend class="fw-bold fs-5">ATENISTA KA APP (AKAPP) SERVICE REGISTRATION</legend>
                     <label for="" class="pb-2 text-justify">
-                        <input type="checkbox" name="" id="" class="form-check-input">
+                        <input type="checkbox" name="" id="" class="form-check-input" required>
                         I agree to receive announcements, notices and reminders from the Ateneo through SMS by being automatically registered to the Atenista Ka App.
+                        <div class="invalid-feedback">
+                            All students are automatically registered to the ATENISTA KA APP (AKAPP) service.You must check the box to indicate that you agree to this automatic registration. 
+                        </div>
                     </label>
-                    <label for="" class="text-danger text-justify">
-                        <input type="checkbox" name="" id="" class="form-check-input">
+                    <label for="" class="text-justify">
+                        <input type="checkbox" name="" id="" class="form-check-input" required>
                         I hereby certify that my personal data in the AISIS is correct and up-to-date. I understand that posting false information on AISIS may be considered as grounds for disciplinary action against me. I understand that any personal or privileged information gathered for the AISIS is meant for official use and will be kept as confidential or privileged information, and is not to be used or disclosed without proper authorization. Furthermore, I consent to have these data used by offices of the Loyola Schools for their official communication channels to allow the school to communicate with me to ensure my welfare, and that I am kept up to date with important school notices and/or summons.
+                        <div class="invalid-feedback">
+                            You must agree before submitting. Please read the terms and conditions at the bottom of the page.
+                        </div>
                     </label>
                 </fieldset>
-                <button class="btn btn-success mb-4">Confirm Information</button>
+                <button type="submit" class="btn btn-success mb-4">Confirm Information</button>
                 <p class="pb-5">For official school announcements, bulletins and FAQs, please refer to <a href="https://bit.ly/LS-One" target="_blank">the LS-One website</a>.</p>
             </form>
         </section>
@@ -516,6 +723,7 @@
         version 2022.02.15</span>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
